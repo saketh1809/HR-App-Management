@@ -2,8 +2,6 @@ FROM node:latest
 
 WORKDIR /usr/src/app
 
-COPY /HR-APP-MANAGEMENT/package.json .
-
 RUN npm install nodejs -y
 RUN npm install mongoose
 RUN npm install body-parser
