@@ -1,13 +1,14 @@
 FROM node:latest
 
-WORKDIR /HR-APP-MANAGEMENT
+WORKDIR /usr/src/app
 
 COPY /HR-APP-MANAGEMENT/package.json .
 
-RUN yum install nodejs -y
+RUN npm install nodejs -y
 RUN npm install mongoose
 RUN npm install body-parser
 RUN npm install dotenv
+RUN npm install package.json
 
 COPY . .
 
