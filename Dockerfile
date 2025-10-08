@@ -8,6 +8,6 @@ COPY . .
 
 CMD [ "node", "server.js" ]
 
-EXPOSE 8086
+EXPOSE 3000
 
 ENV NODE_ENV=.env.example
