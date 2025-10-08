@@ -1,11 +1,10 @@
 FROM node:latest
 
-WORKDIR /HR-APP-MANAGEMENT
-
+WORKDIR /app
+COPY ./package.json /app/
 RUN npm install 
 
 COPY . .
-COPY package*.json ./
 
 CMD [ "node", "server.js" ]
 
